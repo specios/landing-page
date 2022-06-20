@@ -1,0 +1,195 @@
+
+html { 
+	/*
+	background: url(Phulangka_12.jpg) no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	*/
+}
+
+body, button {
+	margin: 0;
+}
+
+html, body, main {
+	height: 100%;
+}
+
+body, input, button, select, option, textarea {
+    font-family: 'Raleway', sans-serif;
+}
+body {
+    font-size: 0.41cm;
+}
+input, button, select, option, textarea {
+    font-size: 100%;
+}
+
+.dummy-header-2 {
+	width: 100%;
+	margin: 0;
+	padding: 2vmin 0;
+}
+
+.dummy-header-5 {
+	width: 100%;
+	margin: 0;
+	padding: 5vmin 0;
+}
+
+.header, h1 {	
+    font-size: 5vmin;
+    font-family: 'Life Savers', cursive;
+	font-weight: 400;
+}
+
+h2 {
+    font-size: 1cm;
+    font-family: 'Life Savers', cursive;
+	font-weight: 400;
+}
+
+.header {
+	width: 100%;
+	margin: 0;
+	padding: 2vmin 0;
+    background: rgba(0,16,0,.40);
+}
+
+.heading {
+	width: 75vmin;
+	margin: auto;
+}
+
+h1 {
+    color: #fff;
+    text-shadow: 0 1px 1px #000;
+}
+
+h1 > strong {
+	font-weight: 700;
+}
+
+.left { text-align: left; }
+.right { text-align: right; }
+.tight-below, h1:last-child, h2:last-child, p:last-child { margin-bottom: 0; }
+.tight-above, h1:first-child, h2:first-child, p:first-child { margin-top: 0; }
+
+.cd-fixed-bg {
+	min-height: 100%;
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+.cd-scrolling-bg {
+	min-height: 100%;
+}
+
+.cd-fixed-bg.cd-bg-1 {
+	position: relative;
+	/*background-image: url(Phulangka_12.jpg);*/
+}
+
+.cd-scrolling-bg.cd-color-2 {
+	position: relative;
+	background-color: rgb(0,64,0);
+	background-image: url(back_tile_faf4f4_ebe5e5.png);
+}
+
+.cd-fixed-bg.cd-bg-3 {
+	position: relative;
+	/*background-image: url(Amanhecer_no_Hercules-resized.jpg);*/
+    text-shadow: 1px 1px 1px #aaa;
+}
+
+.cd-container {
+	position: relative;
+	left: 50%;
+	margin-left: -45vw;
+	width: 90vw;
+}
+
+#scroll-to-second, #scroll-to-third, #scroll-to-first {
+	position: absolute;
+	bottom: 5vmin;
+	left: 50%;
+	margin-left: -3em;
+	width: 6em;
+	border: 0;
+}
+
+#scroll-to-second, #scroll-to-first {
+	background: rgba(255,255,255,.20);
+}
+
+#scroll-to-third {
+	background: rgba(0,0,0,.20);
+}
+
+#scroll-to-second:hover, #scroll-to-first:hover {
+	background: rgba(255,255,255,.40);
+}
+
+#scroll-to-third:hover {
+	background: rgba(0,0,0,.40);
+}
+
+button:active {
+	color: white;
+}
+
+button:focus, button:active { outline: none; }
+
+.fixed-width {
+	font-family: 'Courier New';
+}
+
+.credits {
+	text-align: center;
+}
+
+a, a:link, a:visited, a:active {
+    color: black;
+}
+
+a:hover, a:active, a:focus {
+    color: #080;
+}
+
+.cd-fixed-bg.cd-bg-3 a:hover,
+.cd-fixed-bg.cd-bg-3 a:active,
+.cd-fixed-bg.cd-bg-3 a:focus {
+    color: #fff;
+    text-shadow: 1px 1px 0px #000;
+}
+
+ul, li {
+	margin-top: 0.2em;
+	margin-bottom: 0.2em;
+}
+
+#theorie-praxis-container {
+	display: flex;
+    flex-direction: column;
+    /*flex-wrap: wrap;*/
+    margin-top: 0.83cm;
+    margin-bottom: 0.83cm;
+}
+#theorie-box {
+	margin-right: 0;
+    margin-bottom: 0.83cm;
+}
+
+@media (min-width: 15cm) {
+	#theorie-praxis-container{
+	    flex-direction: row;
+	}
+	#theorie-box {
+	    margin-right: 0.83cm;
+		margin-bottom: 0cm;
+	}
+}
