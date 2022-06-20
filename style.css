@@ -210,3 +210,8 @@ ul, li {
         margin-bottom: 0cm;
     }
 }
+
+.inline-meetup-logo {
+    height: 1em;
+    vertical-align: text-bottom;
+}
