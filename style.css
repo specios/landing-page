@@ -1,3 +1,8 @@
+:root {
+    --base-font-size: 1.25rem;
+    --font-family-serif: 'EB Garamond', Geramond, Georgia, serif;
+    --font-family-monospace: "IBM Plex Mono", "Courier New", monospace;
+}
 
 html {
     /*
@@ -22,11 +27,16 @@ body, input, button, select, option, textarea {
 }
 
 body {
-    font-size: 0.41cm;
+    font-size: calc(0.41 / 0.41 * var(--base-font-size));
+    line-height: 1.25;
 }
 
 input, button, select, option, textarea {
     font-size: 100%;
+}
+
+.restrict-width {
+    max-width: 50rem;
 }
 
 .dummy-header-2 {
@@ -48,7 +58,7 @@ input, button, select, option, textarea {
 }
 
 h2 {
-    font-size: 1cm;
+    font-size: calc(1 / 0.41 * var(--base-font-size));
     font-family: 'Life Savers', cursive;
     font-weight: 400;
 }
@@ -191,23 +201,23 @@ ul, li {
     display: flex;
     flex-direction: column;
     /*flex-wrap: wrap;*/
-    margin-top: 0.83cm;
-    margin-bottom: 0.83cm;
+    margin-top: calc(0.83 / 0.41 * var(--base-font-size));
+    margin-bottom: calc(0.83 / 0.41 * var(--base-font-size));
 }
 
 #theorie-box {
     margin-right: 0;
-    margin-bottom: 0.83cm;
+    margin-bottom: calc(0.83 / 0.41 * var(--base-font-size));
 }
 
-@media (min-width: 15cm) {
+@media (min-width: 45.7rem) /* 15 / 0.41 * 1.25 = 45.7 */ {
     #theorie-praxis-container {
         flex-direction: row;
     }
 
     #theorie-box {
-        margin-right: 0.83cm;
-        margin-bottom: 0cm;
+        margin-right: calc(0.83 / 0.41 * var(--base-font-size));
+        margin-bottom: calc(0 / 0.41 * var(--base-font-size));
     }
 }
 
